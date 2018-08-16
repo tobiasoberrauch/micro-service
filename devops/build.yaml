@@ -1,0 +1,7 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['pull', 'gcr.io/docker-213321/micro-service']
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'build', '-t', 'gcr.io/docker-213321/micro-service', '.' ]
+images:
+- 'gcr.io/docker-213321/micro-service'
